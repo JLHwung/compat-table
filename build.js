@@ -81,7 +81,7 @@ process.nextTick(function () {
   if (!fs.existsSync('esnext/compilers')) {
     fs.mkdirSync('esnext/compilers');
   }
-  var babel = require('babel-core');
+  var babel = require('@babel/standalone');
   var traceur = require('traceur');
   var esdown = require('esdown');
   var jstransform = require('jstransform/simple');
@@ -126,7 +126,7 @@ process.nextTick(function () {
       target_file: 'es6/compilers/babel.html',
       polyfills: [],
       compiler: function(code) {
-        return babel.transform(code, {presets: ['es2015']}).code;
+        return babel.transform(code, {presets: ['es2015'], sourceType: "script"}).code;
       },
     },
     {
@@ -135,7 +135,7 @@ process.nextTick(function () {
       target_file: 'es6/compilers/babel-core-js.html',
       polyfills: ['node_modules/core-js-bundle/index.js', 'node_modules/regenerator-runtime/runtime.js'],
       compiler: function(code) {
-        return babel.transform(code, {presets: ['es2015']}).code;
+        return babel.transform(code, {presets: ['es2015'], sourceType: "script"}).code;
       },
     },
     {
@@ -298,7 +298,7 @@ process.nextTick(function () {
       target_file: 'esnext/compilers/babel-core-js.html',
       polyfills: ['node_modules/core-js-bundle/index.js', 'node_modules/regenerator-runtime/runtime.js'],
       compiler: function(code) {
-        return babel.transform(code, {presets: ['es2015', 'es2016', 'es2017', 'babel-preset-stage-0']}).code;
+        return babel.transform(code, {presets: [['env', { forceAllTransforms: true }], ['stage-0', { decoratorsBeforeExport: true }]], sourceType: "script"}).code;
       },
     },
     {
