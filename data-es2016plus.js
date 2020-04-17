@@ -522,6 +522,7 @@ exports.tests = [
         res: {
           tr: null,
           babel6corejs2: null,
+          babel7corejs2: babel.regenerator,
           closure: true,
           typescript1corejs2: typescript.downlevelIteration,
           chrome52: null,
@@ -638,6 +639,7 @@ exports.tests = [
         res: {
           tr: null,
           babel6corejs2: null,
+          babel7corejs2: babel.regenerator,
           closure: true,
           typescript1corejs2: typescript.downlevelIteration,
           chrome52: null,
@@ -693,6 +695,7 @@ exports.tests = [
         res: {
           tr: null,
           babel6corejs2: null,
+          babel7corejs2: babel.regenerator,
           closure: true,
           typescript1corejs2: typescript.downlevelIteration,
           chrome52: null,
@@ -753,6 +756,7 @@ exports.tests = [
         res: {
           tr: null,
           babel6corejs2: null,
+          babel7corejs2: babel.regenerator,
           closure: true,
           typescript1corejs2: typescript.downlevelIteration,
           chrome52: null,
@@ -788,6 +792,7 @@ exports.tests = [
         res: {
           tr: null,
           babel6corejs2: null,
+          babel7corejs2: babel.regenerator,
           closure: true,
           typescript1corejs2: typescript.downlevelIteration,
           chrome52: null,
@@ -1588,6 +1593,7 @@ exports.tests = [
      return iter['throw']().value === 'bar';
      */},
     res: {
+      babel7corejs3: true,
       closure20180319: true,
       typescript1corejs2: typescript.downlevelIteration,
       ie11: false,
@@ -3265,6 +3271,7 @@ exports.tests = [
         */},
         res : {
           closure20190215: true,
+          babel7corejs2: true,
           ie11: false,
           firefox2: false,
           firefox61: false,
@@ -3284,6 +3291,7 @@ exports.tests = [
         */},
         res : {
           closure20190215: true,
+          babel7corejs2: true,
           ie11: false,
           firefox2: false,
           firefox61: false,

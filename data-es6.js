@@ -17332,6 +17332,7 @@ exports.tests = [
         }
       */},
       res: {
+        babel7corejs2: true,
         firefox2: false,
         firefox41: true,
         opera10_50: false,

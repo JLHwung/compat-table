@@ -870,6 +870,7 @@ exports.tests = [
         return new C(42).x() === 42;
       */},
       res: {
+        babel7corejs2: true,
         ie11: false,
         firefox2: false,
         firefox67: firefox.privateClassFields,
@@ -893,6 +894,7 @@ exports.tests = [
         return new C().x() === 42;
       */},
       res: {
+        babel7corejs2: true,
         ie11: false,
         firefox2: false,
         firefox67: firefox.privateClassFields,
@@ -964,6 +966,7 @@ exports.tests = [
         return new C().x === 42;
       */},
       res: {
+        babel7corejs2: true,
         ie11: false,
         firefox2: false,
         firefox66: false,
@@ -1022,6 +1025,7 @@ exports.tests = [
         return new C().x() === 42;
       */},
       res: {
+        babel7corejs2: true,
         firefox2: false,
         opera10_50: false,
         chrome74: true,
@@ -1039,6 +1043,7 @@ exports.tests = [
         return C.x === 42;
       */},
       res: {
+        babel7corejs2: true,
         firefox2: false,
         firefox74: false,
         firefox75: true,
@@ -1069,6 +1074,7 @@ exports.tests = [
         return new C().x() === 42;
       */},
       res: {
+        babel7corejs2: true,
         firefox75: false,
         opera10_50: false,
         chrome79: chrome.harmony,
@@ -1091,6 +1097,7 @@ exports.tests = [
         return new C().x() === 42;
       */},
       res: {
+        babel7corejs2: true,
         firefox75: false,
         opera10_50: false,
         chrome79: chrome.harmony,
@@ -1116,6 +1123,7 @@ exports.tests = [
         return new C().x() === 42 && y;
       */},
       res: {
+        babel7corejs2: true,
         firefox75: false,
         opera10_50: false,
         chrome79: chrome.harmony,
@@ -1141,6 +1149,7 @@ exports.tests = [
         return new C().x() === 42 && y;
       */},
       res: {
+        babel7corejs2: true,
         firefox75: false,
         opera10_50: false,
         chrome79: chrome.harmony,
@@ -4054,6 +4063,7 @@ exports.tests = [
         return a === 2 && b === 2 && c === 1;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
@@ -4072,6 +4082,7 @@ exports.tests = [
         return a === 1 && i === 1;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
@@ -4090,6 +4101,7 @@ exports.tests = [
         return i === 1;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
@@ -4111,6 +4123,7 @@ exports.tests = [
         return typeof a === 'undefined' && b === 0 && c === 2;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
@@ -4129,6 +4142,7 @@ exports.tests = [
         return typeof a === 'undefined' && i === 1;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
@@ -4147,6 +4161,7 @@ exports.tests = [
         return i === 1;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
@@ -4168,6 +4183,7 @@ exports.tests = [
         return a === 2 && b === 0 && c === 1;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
@@ -4186,6 +4202,7 @@ exports.tests = [
         return a === 1 && i === 1;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
@@ -4204,6 +4221,7 @@ exports.tests = [
         return i === 1;
       */},
       res: {
+        babel7corejs2: true,
         firefox60: false,
         firefox76: false,
         firefox77: firefox.nightly,
